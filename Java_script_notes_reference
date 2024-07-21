@@ -1,0 +1,76 @@
+console.log('Hello World');
+//you will open up a terminal use command node index.js to run it and the script will be referenced in the html file
+let name = 'Moshni'; //string literal
+let age = 30; //number literal
+let isApproved = true; //boolen literal
+
+let selectedColor = ['red', 'blue']; 
+console.log(selectedColor[0]);
+selectedColor[0] = 'green';
+console.log(selectedColor[0]);
+// name is the paramental only meaningful in the function
+function greet(name, lastName) {
+    console.log('Hello World' + name + ''+ lastName);
+}
+greet('John', "smith"); //john is an argument
+
+function square(number) {
+    return number * number;
+
+}
+let number = square(2)
+console.log(square(2));
+//argument is the actual value of paramente
+//this is dynamic and you can store different types
+// can do selctedColor[1] = 1;
+//an array in an object
+// used the brackets with 0 to specify specific color 
+//use null where you want to explicity declare the
+//[] is an empty array
+//let selectedColor = null see above notes where you want to explicity declare as null
+let person = {
+    name:"Mosh",
+    age: 30
+}
+person.name = 'John';
+let selection = 'name';
+console.log(person);
+
+person['selection'] = 'Mary';
+//this is to change name at runtime
+//use dot notation as it is cleaner
+console.log(person.name);
+
+//the above is how to declare an object
+//value of a variable
+
+console.log(name);
+// names can not be reserved keyword. if you try to use one you will 
+//get error
+// names should be meaningful don't use a, b, x- need a clue as
+// to what data is being stored
+// variable cant start with number
+// can not contain space or hypen
+
+
+let firstName ="Mosh";
+let lastName = "Hammy"
+let interestRate = 0.3
+interestRate = 1;
+console.log(interestRate);
+const Rate = 0.3;
+typeof firstName
+console.log(typeof firstName);  
+// const if you dont want it changed
+// types are primitives and reference types
+//primitives are string, numbers, boolens, undefined, and null
+// reference types objects, arrays and numbers
+// object- has name,age and address the properties of a person 
+// we can put variables inside an object
+// use camel notation
+// varibles are case sensitive
+// java is dynamic language - a static language the value can't be changed
+//dynamic languages the value can be changed
+
+// typeof name tells what type of value the variable is 
+// 
